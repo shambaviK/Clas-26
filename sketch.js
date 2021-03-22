@@ -17,6 +17,7 @@ function setup(){
 
     
     ground = new Ground(600,height,1200,20)
+    platform = new Ground(100,350,200,150)
 
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
@@ -44,6 +45,7 @@ function draw(){
     console.log(box2.body.position.y);
     console.log(box2.body.angle);
     box1.display();
+    platform.display();
     box2.display();
     ground.display();
     pig1.display();
